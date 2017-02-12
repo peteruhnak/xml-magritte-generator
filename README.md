@@ -1,4 +1,5 @@
 # XML Magritte Generator
+[![Build Status](https://travis-ci.org/peteruhnak/xml-magritte-generator.svg?branch=master)](https://travis-ci.org/peteruhnak/xml-magritte-generator) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 With this library you can take a "nice" XML and generate Pharo class hierarchy with Magritte Descriptions for each variable.
 I use [Magritte XML Bindings](https://github.com/magritte-metamodel/XML-Bindings/), which gives the hierarchy free XML import/export.
