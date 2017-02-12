@@ -1,7 +1,7 @@
 SmalltalkCISpec {
 	#loading : [
 		SCIMetacelloLoadSpec {
-			#baseline : 'XmlMaGenerator',
+			#baseline : 'XMLMAGenerator',
 			#directory : 'repository',
 			#platforms : [ #pharo ]
 		}
