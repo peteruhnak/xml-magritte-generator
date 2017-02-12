@@ -1,0 +1,3 @@
+enum
+list
+	^ XOGTypeList new

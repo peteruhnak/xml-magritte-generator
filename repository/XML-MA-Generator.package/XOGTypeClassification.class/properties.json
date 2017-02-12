@@ -1,0 +1,14 @@
+{
+	"category" : "XML-MA-Generator-Inference",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 2/12/2017 09:05",
+	"instvars" : [
+		 ],
+	"name" : "XOGTypeClassification",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

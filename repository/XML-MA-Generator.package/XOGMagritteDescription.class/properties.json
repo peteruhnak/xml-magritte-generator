@@ -1,0 +1,22 @@
+{
+	"category" : "XML-MA-Generator-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 2/12/2017 11:46",
+	"instvars" : [
+		"label",
+		"type",
+		"isXmlInlineElement",
+		"isXmlChildAttribute",
+		"isXmlAttribute",
+		"isXmlElement",
+		"accessor",
+		"xmlAttributeName",
+		"refClass" ],
+	"name" : "XOGMagritteDescription",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

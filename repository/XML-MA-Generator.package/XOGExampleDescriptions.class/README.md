@@ -1,0 +1,1 @@
+Examples of magritte methods generated for XML elements.

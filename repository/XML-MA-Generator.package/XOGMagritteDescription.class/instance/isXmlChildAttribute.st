@@ -1,0 +1,3 @@
+accessing
+isXmlChildAttribute
+	^ isXmlChildAttribute

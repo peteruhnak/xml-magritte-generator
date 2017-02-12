@@ -1,0 +1,18 @@
+{
+	"category" : "XML-MA-Generator-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 2/12/2017 11:48",
+	"instvars" : [
+		"classPrefix",
+		"packageName",
+		"classes",
+		"typeHierarchy",
+		"rootClassName" ],
+	"name" : "XOGStructureGenerator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

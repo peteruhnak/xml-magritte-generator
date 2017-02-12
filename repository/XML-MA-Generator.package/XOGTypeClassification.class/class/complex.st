@@ -1,0 +1,3 @@
+enum
+complex
+	^ XOGTypeComplex new

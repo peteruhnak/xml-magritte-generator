@@ -1,0 +1,19 @@
+{
+	"category" : "XML-MA-Generator-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 2/12/2017 00:12",
+	"instvars" : [
+		"name",
+		"parent",
+		"package",
+		"instanceVariables",
+		"methods",
+		"metaMethods" ],
+	"name" : "XOGClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

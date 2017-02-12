@@ -1,0 +1,3 @@
+enum
+inlined
+	^ XOGTypeInlined new
