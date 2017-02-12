@@ -6,6 +6,6 @@ xmlType
 		ifTrue: [ ^ #beXmlElement ].
 	isXmlChildAttribute
 		ifTrue: [ ^ #beXmlChildAttribute ].
-	isXmlInlineElement & (type = MAToOneRelationDescription)
+	type = MAToOneRelationDescription
 		ifTrue: [ ^ #beXmlInlineElement ].
 	^ #beXmlElement

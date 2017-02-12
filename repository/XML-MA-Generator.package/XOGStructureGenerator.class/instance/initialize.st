@@ -4,4 +4,5 @@ initialize
 	classes := Dictionary new.
 	classPrefix := 'XXX'.
 	packageName := 'Generated-Unclassified'.
-	rootClassName := 'Object'
+	rootClassName := 'Object'.
+	valueTypeOverrides := Dictionary new
