@@ -1,9 +1,12 @@
 classification
 hierarchyFor: aDocument
-	| types hierarchy |
-	types := self classificationFor: aDocument.
+	| classification hierarchy valueTypes |
+	classification := self classificationFor: aDocument.
+	valueTypes := XOGValueTypeInference new inferDocument: aDocument.
 	hierarchy := OrderedDictionary new.
 	aDocument allElements
-		do:
-			[ :each | hierarchy at: (self xPathFor: each) put: (self attributesForElement: each basedOn: types) ].
+		do: [ :each | 
+			hierarchy
+				at: (self xPathFor: each)
+				put: (self attributesForElement: each basedOn: classification andValueTypes: valueTypes) ].
 	^ hierarchy

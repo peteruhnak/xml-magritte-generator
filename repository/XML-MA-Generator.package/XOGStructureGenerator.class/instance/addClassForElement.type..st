@@ -7,4 +7,14 @@ addClassForElement: anElement type: aType
 			'xmlElementName
 	^ ''' , anElement name , ''''
 		classified: 'accessing'.
-	aType withIndexDo: [ :each :i | self addPairedAttribute: each to: cls order: i ]
+	aType
+		withIndexDo: [ :each :i | 
+			| pair |
+			pair := each.
+			valueTypeOverrides
+				at: (self xPathFor: anElement) , '/' , pair key
+				ifPresent: [ :t | pair := pair key -> (pair value , {t}) ].
+			valueTypeOverrides
+				at: (self xPathFor: anElement) , '[@' , pair key , ']'
+				ifPresent: [ :t | pair := pair key -> (pair value , {t}) ].
+			self addPairedAttribute: pair to: cls order: i ]

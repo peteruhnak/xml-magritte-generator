@@ -10,7 +10,8 @@
 		"packageName",
 		"classes",
 		"typeHierarchy",
-		"rootClassName" ],
+		"rootClassName",
+		"valueTypeOverrides" ],
 	"name" : "XOGStructureGenerator",
 	"pools" : [
 		 ],
