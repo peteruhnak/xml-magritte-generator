@@ -136,7 +136,7 @@ XOGTypeClassification new hierarchyFor: dom.
 
 ```st
 Metacello new
-    baseline: #XmlMaGenerator;
+    baseline: #XMLMAGenerator;
     repository: 'github://peteruhnak/xml-magritte-generator/repository';
     load
 ```
