@@ -7,4 +7,4 @@ testIsInlined
 	<attr value="text"/>
 	<el>text</el>
 	</root>'.
-	self deny: (classification isInlined: (dom / #empty) first)
+	self assert: (classification isInlined: (dom / #empty) first)

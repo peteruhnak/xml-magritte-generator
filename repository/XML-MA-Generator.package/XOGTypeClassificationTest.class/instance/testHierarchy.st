@@ -8,9 +8,9 @@ testHierarchy
 			{'/complex'
 				->
 					{'list' -> #(list item).
-					'inlinedAttr' -> #(inlinedAttribute 'value').
-					'inlinedElement' -> #(inlinedElement)} asOrderedCollection.
+					'inlinedAttr' -> #(inlinedAttribute 'value' String).
+					'inlinedElement' -> #(inlinedElement String)} asOrderedCollection.
 			'/complex/list' -> nil.
-			'/complex/list/item' -> {'name' -> #(attribute)} asOrderedCollection.
+			'/complex/list/item' -> {'name' -> #(attribute String)} asOrderedCollection.
 			'/complex/inlinedAttr' -> nil.
 			'/complex/inlinedElement' -> nil} asOrderedDictionary
