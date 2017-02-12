@@ -1,0 +1,1 @@
+Baseline for https://github.com/peteruhnak/xml-magritte-generator

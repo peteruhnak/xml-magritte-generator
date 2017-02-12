@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfXMLMAGenerator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 2/12/2017 22:19",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfXMLMAGenerator",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
