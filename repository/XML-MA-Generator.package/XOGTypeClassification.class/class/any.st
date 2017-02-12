@@ -1,0 +1,3 @@
+enum
+any
+	^ XOGTypeAny new

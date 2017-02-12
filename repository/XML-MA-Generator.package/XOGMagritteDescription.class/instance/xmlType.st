@@ -7,5 +7,5 @@ xmlType
 	isXmlChildAttribute
 		ifTrue: [ ^ #beXmlChildAttribute ].
 	isXmlInlineElement
-		ifTrue: [ ^ #beXmlInlineElement ].
+		ifTrue: [ ^ #beXmlElement ].
 	^ #beXmlElement
