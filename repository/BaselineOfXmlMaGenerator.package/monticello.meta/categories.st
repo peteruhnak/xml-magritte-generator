@@ -1,1 +1,2 @@
 SystemOrganization addCategory: #BaselineOfXmlMaGenerator!
+SystemOrganization addCategory: 'BaselineOfXmlMaGenerator-BaselineOfXMLMAGenerator'!

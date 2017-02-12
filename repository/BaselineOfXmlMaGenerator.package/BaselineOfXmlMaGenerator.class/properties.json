@@ -1,5 +1,5 @@
 {
-	"category" : "BaselineOfXmlMaGenerator",
+	"category" : "BaselineOfXMLMAGenerator",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "PeterUhnak 2/12/2017 11:53",
 	"instvars" : [
 		 ],
-	"name" : "BaselineOfXmlMaGenerator",
+	"name" : "BaselineOfXMLMAGenerator",
 	"pools" : [
 		 ],
 	"super" : "BaselineOf",
