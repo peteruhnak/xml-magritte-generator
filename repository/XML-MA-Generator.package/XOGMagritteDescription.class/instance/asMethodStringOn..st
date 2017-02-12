@@ -16,6 +16,7 @@ asMethodStringOn: aStream
 		cr.
 	self cascade: #accessor -> accessor asSymbol on: aStream.
 	self cascade: #label -> label on: aStream.
+	priority ifNotNil: [ self cascade: #priority -> priority on: aStream ].
 	self type = MAToManyRelationDescription
 		ifTrue: [ aStream
 				tab;

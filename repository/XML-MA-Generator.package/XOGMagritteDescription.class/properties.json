@@ -14,7 +14,8 @@
 		"isXmlElement",
 		"accessor",
 		"xmlAttributeName",
-		"refClass" ],
+		"refClass",
+		"priority" ],
 	"name" : "XOGMagritteDescription",
 	"pools" : [
 		 ],

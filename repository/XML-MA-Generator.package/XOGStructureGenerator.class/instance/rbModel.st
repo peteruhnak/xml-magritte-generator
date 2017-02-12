@@ -1,4 +1,4 @@
-as yet unclassified
+generation
 rbModel
 	| model |
 	model := RBNamespace new.

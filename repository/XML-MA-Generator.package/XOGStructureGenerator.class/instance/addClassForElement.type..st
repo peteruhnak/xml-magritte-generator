@@ -7,4 +7,4 @@ addClassForElement: anElement type: aType
 			'xmlElementName
 	^ ''' , anElement name , ''''
 		classified: 'accessing'.
-	aType do: [ :each | self addPairedAttribute: each to: cls ]
+	aType withIndexDo: [ :each :i | self addPairedAttribute: each to: cls order: i ]

@@ -1,5 +1,5 @@
 generation
-addPairedAttribute: aPair to: aClass
+addPairedAttribute: aPair to: aClass order: anOrder
 	| name |
 	name := aPair key.
 	"attribute"
@@ -18,5 +18,5 @@ addPairedAttribute: aPair to: aClass
 		classified: 'accessing'.
 	"magritte"
 	aClass
-		compile: (self magritteDescriptionFor: name type: aPair value) asMethodString
+		compile: (self magritteDescriptionFor: name type: aPair value order: anOrder) asMethodString
 		classified: 'magritte description'

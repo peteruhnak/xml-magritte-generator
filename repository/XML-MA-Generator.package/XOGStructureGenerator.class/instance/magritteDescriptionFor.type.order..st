@@ -1,11 +1,12 @@
 generation
-magritteDescriptionFor: aName type: aType
+magritteDescriptionFor: aName type: aType order: anOrder
 	| desc |
 	desc := XOGMagritteDescription new.
 	desc
 		type: MAStringDescription;
 		accessor: aName;
-		label: aName.
+		label: aName;
+		priority: anOrder.
 	aType first = #list
 		ifTrue: [ desc
 				type: MAToManyRelationDescription;
