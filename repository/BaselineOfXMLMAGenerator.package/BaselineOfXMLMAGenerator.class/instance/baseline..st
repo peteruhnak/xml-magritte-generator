@@ -22,10 +22,8 @@ baseline: spec
 						versionString: #stable;
 						repository: 'http://smalltalkhub.com/mc/Magritte/Magritte3/main/' ].
 			spec
-				package: 'Magritte-XMLBinding'
-				with: [ spec
-						repository: 'github://magritte-metamodel/XML-Bindings:master/repository';
-						requires: #('Magritte') ].
+				baseline: 'MagritteXMLBindings'
+				with: [ spec repository: 'github://peteruhnak/XML-Bindings:master/repository' ].
 			spec
 				package: 'XML-MA-Generator'
-				with: [ spec requires: #('XMLParser' 'XPath' 'Magritte' 'Magritte-XMLBinding') ] ]
+				with: [ spec requires: #('XMLParser' 'XPath' 'Magritte' 'MagritteXMLBindings') ] ]
