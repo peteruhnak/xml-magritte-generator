@@ -33,16 +33,16 @@ it will exhaust class hierarchy and populate it with the content
 Since it is mostly magic, it doesn't always work, for example in the scenarios below.
 Note that it may fail in a variety of unforeseen circumstances, so feel free to [open an issue](https://github.com/peteruhnak/xml-magritte-generator/issues).
 
-**Namespaces / namespaced names:**
+#### Namespaces / namespaced names:
 
-Because `copyReplaceAll: ':' with: '_'` is too much work.
+I didn't look much into how namespaces are actually propagated through the document; not just prefixing, but also NS inheriting. With consistent document the names can be easily mapped.
 
 ```xml
 <xmi:element />
 <element xml:attr="value" />
 ```
 
-**Elements with non-uniform repeating children:**
+#### Elements with non-uniform repeating children:
 
 Because I use the `container` element as variable name to hold `child` references.
 
@@ -67,6 +67,23 @@ This is not ok:
     <otherThing />
   </container>
 </root>
+```
+
+#### Cross-tree references
+
+This is much easier for XMI, but for generic XML there's a lot of ambiguity.
+Maybe a type override specifying that `source` and `target` are `#REF` ids to `/state-machien/states/state`.
+
+```xml
+<state-machine>
+	<states>
+		<state id="10" />
+		<state id="15" />
+	</states>
+	<transitions>
+		<transition source="10" target="15" />
+	</transitions>
+<state-machine>
 ```
 
 ## Usage
@@ -106,7 +123,7 @@ you can either:
 * use `'MXObject'` which implements it
 * add the method to your own root class
 * use `TMXDescription` trait
-* do what you want
+* do whatever you want
 
 
 
@@ -134,7 +151,7 @@ XOGTypeClassification new hierarchyFor: dom.
 
 ## Installation
 
-```st
+```smalltalk
 Metacello new
     baseline: #XMLMAGenerator;
     repository: 'github://peteruhnak/xml-magritte-generator/repository';
@@ -143,7 +160,7 @@ Metacello new
 
 This will also pull some dependencies:
 
-```st
-BaselineOfXmlMaGenerator project latestVersion projects collect: [ :each | each name -> each versionString ]
- "an OrderedCollection('XMLParser'->#stable 'XPath'->#stable 'Magritte'->#stable)"
+```pharo
+BaselineOfXMLMAGenerator project latestVersion projects collect: [ :each | each name -> each versionString ]
+"an OrderedCollection('XMLParser'->#stable 'XPath'->#stable 'Magritte'->#stable 'MagritteXMLBindings'->'baseline')"
 ```
