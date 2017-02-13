@@ -94,7 +94,7 @@ Use the generator along those lines:
 
 ### Generator
 
-```st
+```smalltalk
 gen := XOGStructureGenerator new.
 "optional attributes, they have their default values"
 gen packageName: 'MachineGenerated'.
@@ -129,13 +129,13 @@ you can either:
 
 ### XML → Object
 
-```st
+```smalltalk
 obj := XXXClassForRootElement new magritteDescription fromXmlNode: dom root.
 ```
 
 ### Object → XML
 
-```st
+```smalltalk
 obj magritteDescription toXmlDocument: obj.
 ```
 
@@ -143,7 +143,7 @@ obj magritteDescription toXmlDocument: obj.
 
 The inferencers are messy and hacky, but not too long. You can inspect these invocations three to see what they produce:
 
-```st
+```smalltalk
 XOGValueTypeInference new inferDocument: dom.
 XOGTypeClassification new classificationFor: dom.
 XOGTypeClassification new hierarchyFor: dom.
@@ -160,7 +160,7 @@ Metacello new
 
 This will also pull some dependencies:
 
-```pharo
+```smalltalk
 BaselineOfXMLMAGenerator project latestVersion projects collect: [ :each | each name -> each versionString ]
 "an OrderedCollection('XMLParser'->#stable 'XPath'->#stable 'Magritte'->#stable 'MagritteXMLBindings'->'baseline')"
 ```
