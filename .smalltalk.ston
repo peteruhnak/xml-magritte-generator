@@ -8,5 +8,8 @@ SmalltalkCISpec {
 	],
 	#testing : {
 		#packages : [ 'XML-MA-Generator' ]
+		#coverage : {
+			#packages : [ 'XML-MA-Generator' ]
+		}
 	}
 }
