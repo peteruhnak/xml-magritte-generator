@@ -1,15 +1,21 @@
 SmalltalkCISpec {
 	#loading : [
 		SCIMetacelloLoadSpec {
+			#platforms : [
+				#pharo
+			],
 			#baseline : 'XMLMAGenerator',
-			#directory : 'repository',
-			#platforms : [ #pharo ]
+			#directory : 'repository'
 		}
 	],
 	#testing : {
-		#packages : [ 'XML-MA-Generator' ]
 		#coverage : {
-			#packages : [ 'XML-MA-Generator' ]
-		}
+			#packages : [
+				'XML-MA-Generator'
+			]
+		},
+		#packages : [
+			'XML-MA-Generator'
+		]
 	}
 }
