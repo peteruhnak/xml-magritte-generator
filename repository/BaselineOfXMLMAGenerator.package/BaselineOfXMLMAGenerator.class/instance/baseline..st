@@ -25,5 +25,9 @@ baseline: spec
 				baseline: 'MagritteXMLBindings'
 				with: [ spec repository: 'github://peteruhnak/XML-Bindings:master/repository' ].
 			spec
+				baseline: 'ChangesBuilder'
+				with: [ spec repository: 'github://peteruhnak/pharo-changes-builder/repository' ].
+			spec
 				package: 'XML-MA-Generator'
-				with: [ spec requires: #('XMLParser' 'XPath' 'Magritte' 'MagritteXMLBindings') ] ]
+				with:
+					[ spec requires: #('XMLParser' 'XPath' 'Magritte' 'MagritteXMLBindings' 'ChangesBuilder') ] ]

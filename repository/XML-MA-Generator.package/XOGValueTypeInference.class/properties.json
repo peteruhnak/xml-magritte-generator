@@ -1,14 +1,11 @@
 {
-	"category" : "XML-MA-Generator-Inference",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "PeterUhnak 2/12/2017 18:51",
-	"instvars" : [
-		 ],
-	"name" : "XOGValueTypeInference",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "XML-MA-Generator-Inference",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "XOGValueTypeInference",
+	"type" : "normal"
+}

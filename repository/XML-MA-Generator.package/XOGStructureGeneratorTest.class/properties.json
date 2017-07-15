@@ -1,14 +1,13 @@
 {
-	"category" : "XML-MA-Generator-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"generator" ],
-	"name" : "XOGStructureGeneratorTest",
-	"pools" : [
-		 ],
 	"super" : "XOGTestCase",
-	"type" : "normal" }
+	"category" : "XML-MA-Generator-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"generator"
+	],
+	"name" : "XOGStructureGeneratorTest",
+	"type" : "normal"
+}

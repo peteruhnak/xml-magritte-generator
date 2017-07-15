@@ -1,10 +1,10 @@
 {
-	"category" : "XML-MA-Generator-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "PeterUhnak 2/12/2017 11:46",
+	"super" : "Object",
+	"category" : "XML-MA-Generator-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"label",
 		"type",
@@ -15,9 +15,8 @@
 		"accessor",
 		"xmlAttributeName",
 		"refClass",
-		"priority" ],
+		"priority"
+	],
 	"name" : "XOGMagritteDescription",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

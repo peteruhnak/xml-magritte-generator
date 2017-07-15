@@ -1,17 +1,16 @@
 {
-	"category" : "XML-MA-Generator-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "XOGTestCase",
+	"category" : "XML-MA-Generator-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"generator",
 		"classification",
 		"dom",
-		"element" ],
+		"element"
+	],
 	"name" : "XOGTypeClassificationTest",
-	"pools" : [
-		 ],
-	"super" : "XOGTestCase",
-	"type" : "normal" }
+	"type" : "normal"
+}

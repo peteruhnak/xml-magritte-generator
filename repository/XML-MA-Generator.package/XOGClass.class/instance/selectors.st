@@ -1,3 +1,0 @@
-accessing
-selectors
-	^ methods keys

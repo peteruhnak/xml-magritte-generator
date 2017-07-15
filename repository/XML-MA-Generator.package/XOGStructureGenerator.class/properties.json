@@ -1,19 +1,18 @@
 {
-	"category" : "XML-MA-Generator-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "PeterUhnak 2/12/2017 11:48",
+	"super" : "Object",
+	"category" : "XML-MA-Generator-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"classPrefix",
 		"packageName",
 		"classes",
 		"typeHierarchy",
 		"rootClassName",
-		"valueTypeOverrides" ],
+		"valueTypeOverrides"
+	],
 	"name" : "XOGStructureGenerator",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
