@@ -104,9 +104,16 @@ gen rootClassName: 'MXObject'. "a class from which all the classes will inherit"
 "run the generator; this will NOT create the code yet"
 gen processDocument: dom.
 
-"get RBNamespace instance with `gen rbModel`, and open changes browser on it"
-(ChangesBrowser changes: gen rbModel changes changes) open.
+"retrieve CBChangesSet¹, so additional modifications can be performed"
+changes := gen changes.
+
+(CBChangesBrowser changes: changes refactoringChanges) open.
 ```
+
+¹ Documentation on CBChangesSet is available in [Changes Builder project](https://github.com/peteruhnak/pharo-changes-builder)
+
+
+## Connecting with XML nodes
 
 **NOTE** that all the generated classes must contain this method:
 
@@ -125,7 +132,7 @@ you can either:
 * use `TMXDescription` trait
 * do whatever you want
 
-
+## Reading / Writing
 
 ### XML → Object
 
@@ -158,9 +165,8 @@ Metacello new
     load
 ```
 
-This will also pull some dependencies:
+Dependencies:
 
 ```smalltalk
-BaselineOfXMLMAGenerator project latestVersion projects collect: [ :each | each name -> each versionString ]
-"an OrderedCollection('XMLParser'->#stable 'XPath'->#stable 'Magritte'->#stable 'MagritteXMLBindings'->'baseline')"
+BaselineOfXMLMAGenerator project latestVersion projects asArray collect: #name. "#('XMLParser' 'XPath' 'Magritte' 'MagritteXMLBindings' 'ChangesBuilder')"
 ```
