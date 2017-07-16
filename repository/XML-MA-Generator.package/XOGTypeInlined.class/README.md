@@ -1,0 +1,1 @@
+I represent an element that has only string value and will be inlined as an attribute of the partent #complex type.

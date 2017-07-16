@@ -1,4 +1,6 @@
-Rules:
+I classify elements by their relation to their own subelements.
+
+Rules for classification (complex/inlined/list/any), by priority:
 
 A) root is always #complex
 B) #inlined

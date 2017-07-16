@@ -1,0 +1,1 @@
+I represent an element whose type hasn't been determined yet.

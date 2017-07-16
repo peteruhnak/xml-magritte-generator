@@ -1,0 +1,1 @@
+I represent a XML element that has no attributes and all its children have the same name (=childName).

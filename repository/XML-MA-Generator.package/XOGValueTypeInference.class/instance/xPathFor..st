@@ -5,8 +5,7 @@ xPathFor: aNode
 	element := aNode.
 	suffix := ''.
 	aNode isAttribute
-		ifTrue: [ element parent.
-			suffix := '[@' , element name , ']' ].
+		ifTrue: [ suffix := '[@' , element name , ']' ].
 	[ element isDocument ]
 		whileFalse: [ parts addFirst: element name.
 			element := element parent ].

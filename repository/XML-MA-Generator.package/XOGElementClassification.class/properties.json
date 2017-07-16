@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "PeterUhnak 7/16/2017 23:27",
-	"super" : "XOGType",
+	"super" : "Object",
 	"category" : "XML-MA-Generator-Inference",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "XOGTypeAny",
+	"name" : "XOGElementClassification",
 	"type" : "normal"
 }
