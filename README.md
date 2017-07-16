@@ -148,12 +148,12 @@ obj magritteDescription toXmlDocument: obj.
 
 ### Inference
 
-The inferencers are messy and hacky, but not too long. You can inspect these invocations three to see what they produce:
+The inferencers guess the element/attribute value type (String, Boolean, ...) as well as their type that relates them to their attributes and children (list, complex, inlined, ...).
 
 ```smalltalk
-XOGValueTypeInference new inferDocument: dom.
-XOGTypeClassification new classificationFor: dom.
-XOGTypeClassification new hierarchyFor: dom.
+types := XOGTypeClassification new classificationFor: dom.
+valueTypes := XOGValueTypeInference new inferDocument: dom.
+classification := XOGElementClassification new classifyTypes: types andValues: valueTypes.
 ```
 
 ## Installation
