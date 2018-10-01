@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This project is deprecated.
+
 # XML Magritte Generator
 [![Build Status](https://travis-ci.org/peteruhnak/xml-magritte-generator.svg?branch=master)](https://travis-ci.org/peteruhnak/xml-magritte-generator) [![Coverage Status](https://coveralls.io/repos/github/peteruhnak/xml-magritte-generator/badge.svg?branch=master)](https://coveralls.io/github/peteruhnak/xml-magritte-generator?branch=master)
 
